@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="./assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="LoginBar">
+        <ul class="LoginBarList">
+          <a class="R-12" href="/">로그인</a>
+          <a class="R-12" href="/">회원가입</a>
+          <a class="R-12" href="/">고객센터</a>
+          <a class="R-12" href="/">쿠팡플레이</a>
+          <a class="R-12" href="/">제휴마케팅</a>
+        </ul>
+      </div>
+      <div class="CategoryBar">
+        <button class="button--category">
+          <span class="Category-text R-12">카태고리</span>
+        </button>
+        <h1 class="CategoryItem">
+          <a href="https://www.coupang.com/" target="_blank" rel="noopener">
+          <img class="Logo" src="./assets/logo/logo.png" alt="로고" />
+          </a>
+        </h1>
+        <div class="CategoryItem">
+            <select class="Select R-12">
+              <option value="">전체</option>
+          </select>
+          <div class="Divide"></div>
+          <input class="Search R-12" type="search" placeholder="찾고 싶은 상품을 검색해보세요! "></input>
+          <button class="Button" alt="마이크">
+            <img src="./assets/icon/mic.svg"/>
+          </button>
+          <button class="Button" alt="검색">
+            <img src="./assets/icon/search.svg"/>
+          </button>
+        </div>
+        <div class="CategoryItem">
+          <div class="TypeItem R-12">
+            <img src="./assets/icon/icon-rocket.svg" alt="로켓배송" />
+            <span>로켓배송</span>
+          </div>
+          <div class="TypeItem R-12">
+            <img src="./assets/icon/icon-fresh.svg" alt="로켓프래쉬" />
+            <span>로켓프래쉬</span>
+          </div>
+          <div class="TypeItem R-12">
+            <span>2022년 설날</span>
+            <img src="./assets/icon/new.svg" alt="새로운 항목입니다." />
+          </div>
+          <div class="TypeItem R-12">로켓직구</div>
+          <div class="TypeItem R-12">골드박스</div>
+          <div class="TypeItem R-12">정기배송</div>
+          <div class="TypeItem R-12">이밴트/쿠폰</div>
+          <div class="TypeItem R-12">기획전</div>
+          <div class="TypeItem R-12">여행티켓</div>
+        </div>
+      </div>
+      <div class="myCoupang">
+        <img src="./assets/icon/my-coupang.svg" alt="마이쿠팡" />
+        <button class="R-12">마이쿠팡</button>
+        <div class="tooltip">
+          <li class="R-12">주문내역</li>
+          <li class="R-12">취소/반품</li>
+          <li class="R-12">찜리스트</li>
+        </div>
+      </div>
+      <div class="cart">
+        <div class="Round R-12">0</div>
+        <img class="imgcart"src="./assets/icon/cart.svg" alt="장바구니" />
+        <button class="R-12">장바구니</button>
+        <div class="box">장바구니에 담긴 상품이 없습니다.</div>
+      </div>
+    </header>
+  </body>
+</html>

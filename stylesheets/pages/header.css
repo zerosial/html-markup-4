@@ -1,0 +1,260 @@
+/* 헤더 */
+.R-12 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*로그인탭*/
+header {
+  width: 1920px;
+  height: 150px;
+  border: 1px solid var(--color-gray-100);
+}
+
+.LoginBar {
+  display: grid;
+  justify-items: center;
+  width: 1920px;
+  height: 34px;
+  background-color: var(--color-gray-100);
+}
+
+.LoginBarList {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 56px 56px auto 34px 45px 45px;
+  gap: 8px;
+  width: 1040px;
+  height: 24px;
+  margin-top: 5px;
+}
+
+.LoginBarList a:nth-child(1) {
+  grid-column: 4/5;
+  order: 3;
+}
+
+.LoginBarList a:nth-child(2) {
+  grid-column: 5/6;
+  order: 4;
+}
+
+.LoginBarList a:nth-child(3) {
+  grid-column: 6/7;
+  order: 5;
+}
+
+.LoginBarList a:nth-child(4) {
+  grid-column: 1/2;
+  order: 1;
+}
+
+.LoginBarList a:nth-child(5) {
+  grid-column: 2/3;
+  order: 2;
+}
+
+/*검색탭*/
+.CategoryBar {
+  display: grid;
+  width: 1020px;
+  grid-template-columns: 110px 176px 590px;
+  grid-template-rows: 1fr 1fr;
+  height: 116px;
+  margin-left: 473px;
+}
+
+.button--category {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-row: 1/3;
+  width: 110px;
+  height: 116px;
+  background-color: var(--color-blue-600);
+  border: 0;
+  color: white;
+  background-image: url("../../assets/icon/hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 34%;
+}
+
+.Category-text {
+  position: absolute;
+  margin-left: 26px;
+  margin-top: 70px;
+}
+
+.CategoryBar .CategoryItem:nth-child(2) {
+  margin-top: 34px;
+  height: 40px;
+  margin-left: 40px;
+}
+
+.Logo {
+  width: 176px;
+  height: 40px;
+}
+
+.CategoryBar .CategoryItem:nth-child(3) {
+  display: grid;
+  grid-template-columns: 135px 1px 300px 40px 40px;
+  margin-top: 34px;
+  height: 40px;
+  margin-left: 70px;
+  border: 1px solid var(--color-blue-600);
+}
+
+.CategoryItem img {
+  margin: auto;
+}
+
+.CategoryBar .CategoryItem:nth-child(4) {
+  display: grid;
+  grid-template-columns: 91px 102px 108px 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 755px;
+  height: 26px;
+  margin-top: 10px;
+  margin-left: 36px;
+  grid-column: 2/6;
+}
+
+.TypeItem {
+  display: inline-block;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.Divide {
+  background-color: var(--color-gray-100);
+}
+
+.Button {
+  background-color: var(--color-white);
+  border: 0px;
+}
+
+.Search {
+  background-color: var(--color-white);
+  border: 0px;
+}
+
+.Select {
+  color: var(--color-gray-700);
+  border: 0px;
+  margin-left: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../../assets/icon/dropdown.svg");
+  background-size: 40px;
+  background-position: calc(100% - 0.5em) center;
+  background-repeat: no-repeat;
+}
+
+/* 마이쿠팡 */
+
+.myCoupang {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  position: absolute;
+  margin-left: 1368px;
+  margin-top: -80px;
+}
+
+.myCoupang > img {
+  margin: auto;
+}
+
+.myCoupang > button {
+  padding: 0;
+  background-color: var(--color-white);
+  border: 0;
+  outline: 0;
+}
+
+.myCoupang.is--active > .tooltip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90px;
+  height: 130px;
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-white);
+}
+
+.tooltip {
+  display: none;
+  margin-top: 5px;
+}
+
+li {
+  list-style: none;
+}
+/* 카트 */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin-left: 1448px;
+  margin-top: -79px;
+}
+
+.cart > button {
+  padding: 0;
+  background-color: var(--color-white);
+  border: 0;
+  outline: 0;
+}
+
+.imgcart {
+  width: 28px;
+  height: 28px;
+}
+
+.Round {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-left: 28px;
+  margin-top: -4px;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: var(--color-blue-600);
+  color: var(--color-white);
+}
+
+.cart.cart--empty > .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-gray-300);
+}
+
+.box {
+  display: none;
+  position: absolute;
+  margin-top: 50px;
+  margin-right: 240px;
+  width: 288px;
+  height: 99px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-white);
+}
